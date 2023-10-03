@@ -1,0 +1,14 @@
+C:\Users\53023\Documents\GitHub\Projects_Module9_11E\Ficha_de_Trabalho1\Exercício\obj\Debug\net6.0\Exercício.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\53023\Documents\GitHub\Projects_Module9_11E\Ficha_de_Trabalho1\Exercício\obj\Debug\net6.0\Exercício.AssemblyInfoInputs.cache
+C:\Users\53023\Documents\GitHub\Projects_Module9_11E\Ficha_de_Trabalho1\Exercício\obj\Debug\net6.0\Exercício.AssemblyInfo.cs
+C:\Users\53023\Documents\GitHub\Projects_Module9_11E\Ficha_de_Trabalho1\Exercício\obj\Debug\net6.0\Exercício.csproj.CoreCompileInputs.cache
+C:\Users\53023\Documents\GitHub\Projects_Module9_11E\Ficha_de_Trabalho1\Exercício\bin\Debug\net6.0\Exercício.exe
+C:\Users\53023\Documents\GitHub\Projects_Module9_11E\Ficha_de_Trabalho1\Exercício\bin\Debug\net6.0\Exercício.deps.json
+C:\Users\53023\Documents\GitHub\Projects_Module9_11E\Ficha_de_Trabalho1\Exercício\bin\Debug\net6.0\Exercício.runtimeconfig.json
+C:\Users\53023\Documents\GitHub\Projects_Module9_11E\Ficha_de_Trabalho1\Exercício\bin\Debug\net6.0\Exercício.dll
+C:\Users\53023\Documents\GitHub\Projects_Module9_11E\Ficha_de_Trabalho1\Exercício\bin\Debug\net6.0\Exercício.pdb
+C:\Users\53023\Documents\GitHub\Projects_Module9_11E\Ficha_de_Trabalho1\Exercício\obj\Debug\net6.0\Exercício.dll
+C:\Users\53023\Documents\GitHub\Projects_Module9_11E\Ficha_de_Trabalho1\Exercício\obj\Debug\net6.0\refint\Exercício.dll
+C:\Users\53023\Documents\GitHub\Projects_Module9_11E\Ficha_de_Trabalho1\Exercício\obj\Debug\net6.0\Exercício.pdb
+C:\Users\53023\Documents\GitHub\Projects_Module9_11E\Ficha_de_Trabalho1\Exercício\obj\Debug\net6.0\Exercício.genruntimeconfig.cache
+C:\Users\53023\Documents\GitHub\Projects_Module9_11E\Ficha_de_Trabalho1\Exercício\obj\Debug\net6.0\ref\Exercício.dll
