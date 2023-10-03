@@ -1,0 +1,14 @@
+C:\Users\53023\Documents\GitHub\Projects_Module9_11E\Variáveis\Exercício Variáveis\obj\Debug\net6.0\Exercício Variáveis.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\53023\Documents\GitHub\Projects_Module9_11E\Variáveis\Exercício Variáveis\obj\Debug\net6.0\Exercício Variáveis.AssemblyInfoInputs.cache
+C:\Users\53023\Documents\GitHub\Projects_Module9_11E\Variáveis\Exercício Variáveis\obj\Debug\net6.0\Exercício Variáveis.AssemblyInfo.cs
+C:\Users\53023\Documents\GitHub\Projects_Module9_11E\Variáveis\Exercício Variáveis\obj\Debug\net6.0\Exercício Variáveis.csproj.CoreCompileInputs.cache
+C:\Users\53023\Documents\GitHub\Projects_Module9_11E\Variáveis\Exercício Variáveis\bin\Debug\net6.0\Exercício Variáveis.exe
+C:\Users\53023\Documents\GitHub\Projects_Module9_11E\Variáveis\Exercício Variáveis\bin\Debug\net6.0\Exercício Variáveis.deps.json
+C:\Users\53023\Documents\GitHub\Projects_Module9_11E\Variáveis\Exercício Variáveis\bin\Debug\net6.0\Exercício Variáveis.runtimeconfig.json
+C:\Users\53023\Documents\GitHub\Projects_Module9_11E\Variáveis\Exercício Variáveis\bin\Debug\net6.0\Exercício Variáveis.dll
+C:\Users\53023\Documents\GitHub\Projects_Module9_11E\Variáveis\Exercício Variáveis\bin\Debug\net6.0\Exercício Variáveis.pdb
+C:\Users\53023\Documents\GitHub\Projects_Module9_11E\Variáveis\Exercício Variáveis\obj\Debug\net6.0\Exercício Variáveis.dll
+C:\Users\53023\Documents\GitHub\Projects_Module9_11E\Variáveis\Exercício Variáveis\obj\Debug\net6.0\refint\Exercício Variáveis.dll
+C:\Users\53023\Documents\GitHub\Projects_Module9_11E\Variáveis\Exercício Variáveis\obj\Debug\net6.0\Exercício Variáveis.pdb
+C:\Users\53023\Documents\GitHub\Projects_Module9_11E\Variáveis\Exercício Variáveis\obj\Debug\net6.0\Exercício Variáveis.genruntimeconfig.cache
+C:\Users\53023\Documents\GitHub\Projects_Module9_11E\Variáveis\Exercício Variáveis\obj\Debug\net6.0\ref\Exercício Variáveis.dll
