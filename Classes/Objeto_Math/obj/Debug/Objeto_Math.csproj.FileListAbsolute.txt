@@ -1,0 +1,7 @@
+C:\Users\53023\Documents\GitHub\Projects_Module9_11E\Classes\Objeto_Math\bin\Debug\Objeto_Math.exe.config
+C:\Users\53023\Documents\GitHub\Projects_Module9_11E\Classes\Objeto_Math\bin\Debug\Objeto_Math.exe
+C:\Users\53023\Documents\GitHub\Projects_Module9_11E\Classes\Objeto_Math\bin\Debug\Objeto_Math.pdb
+C:\Users\53023\Documents\GitHub\Projects_Module9_11E\Classes\Objeto_Math\obj\Debug\Objeto_Math.csproj.AssemblyReference.cache
+C:\Users\53023\Documents\GitHub\Projects_Module9_11E\Classes\Objeto_Math\obj\Debug\Objeto_Math.csproj.CoreCompileInputs.cache
+C:\Users\53023\Documents\GitHub\Projects_Module9_11E\Classes\Objeto_Math\obj\Debug\Objeto_Math.exe
+C:\Users\53023\Documents\GitHub\Projects_Module9_11E\Classes\Objeto_Math\obj\Debug\Objeto_Math.pdb
