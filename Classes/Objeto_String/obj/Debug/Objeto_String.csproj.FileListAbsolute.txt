@@ -1,0 +1,7 @@
+C:\Users\53023\Documents\GitHub\Projects_Module9_11E\Classes\Objeto_String\bin\Debug\Objeto_String.exe.config
+C:\Users\53023\Documents\GitHub\Projects_Module9_11E\Classes\Objeto_String\bin\Debug\Objeto_String.exe
+C:\Users\53023\Documents\GitHub\Projects_Module9_11E\Classes\Objeto_String\bin\Debug\Objeto_String.pdb
+C:\Users\53023\Documents\GitHub\Projects_Module9_11E\Classes\Objeto_String\obj\Debug\Objeto_String.csproj.AssemblyReference.cache
+C:\Users\53023\Documents\GitHub\Projects_Module9_11E\Classes\Objeto_String\obj\Debug\Objeto_String.csproj.CoreCompileInputs.cache
+C:\Users\53023\Documents\GitHub\Projects_Module9_11E\Classes\Objeto_String\obj\Debug\Objeto_String.exe
+C:\Users\53023\Documents\GitHub\Projects_Module9_11E\Classes\Objeto_String\obj\Debug\Objeto_String.pdb
