@@ -41,7 +41,7 @@ namespace Objeto_String
             // Compara strings
             Console.WriteLine( frase == "Progamçao em c#");
 
-            // Remove uma parte da string, essa parte dentro do indexof e depois o número que quer subtrair
+            // Outrra forma de comparar
             Console.WriteLine(frase.Equals("Progamaçao em c#, StringComparison.ordinal"));
 
             Console.ReadKey();
