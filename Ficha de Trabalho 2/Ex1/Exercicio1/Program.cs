@@ -22,7 +22,7 @@ namespace Exercicio2
         {
             Console.WriteLine("\t-----Exercicio Objeto String-----");
 
-            Console.WriteLine("\n")
+            Console.WriteLine("\n");
 
             string x = "arroz";
             string y = "feijao";
