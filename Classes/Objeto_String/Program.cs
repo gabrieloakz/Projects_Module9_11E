@@ -11,30 +11,38 @@ namespace Objeto_String
         static void Main(string[] args)
         {
             string frase = " Progamaçao em C#";
-            
+
             // Diz o tamanho do objetivo string
-            Console.WriteLine("Tamanho: " + frase.Length);
+            Console.WriteLine("Tamanho:" + frase.Length);
 
             // Deixa a string maiscula
-            Console.WriteLine("Maiuscula: " + frase.ToUpper());
+            Console.WriteLine("Maiuscula:" + frase.ToUpper());
 
             // Deixa a string minuscula
-            Console.WriteLine("Maiuscula: " + frase.ToLower());
+            Console.WriteLine("Maiuscula:" + frase.ToLower());
 
             // Retira espaço do inicio
-            Console.WriteLine("Sem espaço no inicio: " + frase.TrimStart());
+            Console.WriteLine("Sem espaço no inicio:" + frase.TrimStart());
 
             // Substitui uma parte da string por outra definida aa seguir
-            Console.WriteLine("Substituiçao: " + frase.Replace("C#", "C# by TGPSI"));
+            Console.WriteLine("Substituiçao:" + frase.Replace("C#", "C# by AEB"));
 
             // Deixa um caractere n da string
-            Console.WriteLine("Caracter nº15: " + frase.Substring(15));
+            Console.WriteLine("Caracter nº15:" + frase.Substring(15));
 
-            // Remove uma parte da string
-            //Console.WriteLine("Sem espaço no inicio: " + frase.Remove(- 1));
+            // Remove uma parte da string, essa parte dentro do indexof e depois o número que quer subtrair
+            Console.WriteLine("Remove:" + frase.Remove(frase.IndexOf("C#") - 1));
 
+            // Junta uma nova string na nossa string frase
+            Console.WriteLine("Concatenar:" + string.Concat(frase, "-PSI"));
 
+            Console.WriteLine("Ambos a seguiur comnparam se sao strings iguais e retorna true ou false:");
+            
+            // Compara strings
+            Console.WriteLine( frase == "Progamçao em c#");
 
+            // Remove uma parte da string, essa parte dentro do indexof e depois o número que quer subtrair
+            Console.WriteLine(frase.Equals("Progamaçao em c#, StringComparison.ordinal"));
 
             Console.ReadKey();
         }
