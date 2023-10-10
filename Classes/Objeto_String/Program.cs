@@ -27,7 +27,7 @@ namespace Objeto_String
             // Substitui uma parte da string por outra definida aa seguir
             Console.WriteLine("Substituiçao:" + frase.Replace("C#", "C# by AEB"));
 
-            // Deixa um caractere n da string
+            // Extrai uma substring n da string
             Console.WriteLine("Caracter nº15:" + frase.Substring(15));
 
             // Remove uma parte da string, essa parte dentro do indexof e depois o número que quer subtrair
