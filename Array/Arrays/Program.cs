@@ -37,9 +37,13 @@ namespace Arrays
             //Mostrar tamanho do array
             Console.WriteLine(palavras.Length);
 
-            //Declaração de arrays multidimesionais
+            //Declaração de arrays multidimesionais: Primeira posição indica a linha e a segunda a coluna
             int[,] multiInteiros = new int[,] { { 1, 2, 3, 4 } , { 5, 6, 7, 8 } };
-            Console.WriteLine(multiInteiros[1, 1]);
+            Console.WriteLine(multiInteiros[0, 0]); //Na linha 0 e coluna 0 há o número 1
+
+            //Declaração  arrays de arrays: jagged arrays
+            int[][] jaggedInteiros = new int[3][] { new int[] { 1, 2, 3, 4 }, new int[] { 5, 6, 7, 8 }, new int[] { 9, 10, 11, 12 } };
+            Console.WriteLine(jaggedInteiros[0][2]);
             
             Console.ReadKey();
         }
