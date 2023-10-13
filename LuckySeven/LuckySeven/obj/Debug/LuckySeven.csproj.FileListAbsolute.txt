@@ -1,0 +1,10 @@
+C:\Users\53023\Documents\GitHub\Projects_Module9_11E\LuckySeven\LuckySeven\bin\Debug\LuckySeven.exe.config
+C:\Users\53023\Documents\GitHub\Projects_Module9_11E\LuckySeven\LuckySeven\bin\Debug\LuckySeven.exe
+C:\Users\53023\Documents\GitHub\Projects_Module9_11E\LuckySeven\LuckySeven\bin\Debug\LuckySeven.pdb
+C:\Users\53023\Documents\GitHub\Projects_Module9_11E\LuckySeven\LuckySeven\obj\Debug\LuckySeven.csproj.AssemblyReference.cache
+C:\Users\53023\Documents\GitHub\Projects_Module9_11E\LuckySeven\LuckySeven\obj\Debug\LuckySeven.Form1.resources
+C:\Users\53023\Documents\GitHub\Projects_Module9_11E\LuckySeven\LuckySeven\obj\Debug\LuckySeven.Properties.Resources.resources
+C:\Users\53023\Documents\GitHub\Projects_Module9_11E\LuckySeven\LuckySeven\obj\Debug\LuckySeven.csproj.GenerateResource.cache
+C:\Users\53023\Documents\GitHub\Projects_Module9_11E\LuckySeven\LuckySeven\obj\Debug\LuckySeven.csproj.CoreCompileInputs.cache
+C:\Users\53023\Documents\GitHub\Projects_Module9_11E\LuckySeven\LuckySeven\obj\Debug\LuckySeven.exe
+C:\Users\53023\Documents\GitHub\Projects_Module9_11E\LuckySeven\LuckySeven\obj\Debug\LuckySeven.pdb

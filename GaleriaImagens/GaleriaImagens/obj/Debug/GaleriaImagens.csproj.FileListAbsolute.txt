@@ -1,0 +1,10 @@
+C:\Users\53023\Documents\GitHub\Projects_Module9_11E\GaleriaImagens\GaleriaImagens\obj\Debug\GaleriaImagens.csproj.AssemblyReference.cache
+C:\Users\53023\Documents\GitHub\Projects_Module9_11E\GaleriaImagens\GaleriaImagens\obj\Debug\GaleriaImagens.Form1.resources
+C:\Users\53023\Documents\GitHub\Projects_Module9_11E\GaleriaImagens\GaleriaImagens\obj\Debug\GaleriaImagens.Properties.Resources.resources
+C:\Users\53023\Documents\GitHub\Projects_Module9_11E\GaleriaImagens\GaleriaImagens\obj\Debug\GaleriaImagens.csproj.GenerateResource.cache
+C:\Users\53023\Documents\GitHub\Projects_Module9_11E\GaleriaImagens\GaleriaImagens\obj\Debug\GaleriaImagens.csproj.CoreCompileInputs.cache
+C:\Users\53023\Documents\GitHub\Projects_Module9_11E\GaleriaImagens\GaleriaImagens\bin\Debug\GaleriaImagens.exe.config
+C:\Users\53023\Documents\GitHub\Projects_Module9_11E\GaleriaImagens\GaleriaImagens\bin\Debug\GaleriaImagens.exe
+C:\Users\53023\Documents\GitHub\Projects_Module9_11E\GaleriaImagens\GaleriaImagens\bin\Debug\GaleriaImagens.pdb
+C:\Users\53023\Documents\GitHub\Projects_Module9_11E\GaleriaImagens\GaleriaImagens\obj\Debug\GaleriaImagens.exe
+C:\Users\53023\Documents\GitHub\Projects_Module9_11E\GaleriaImagens\GaleriaImagens\obj\Debug\GaleriaImagens.pdb
