@@ -69,27 +69,6 @@ namespace Calculadora
             textBoxResultado.Text = resultado.ToString();
         }
 
-        private void buttonCalcular_Click(object sender, EventArgs e)
-        {
-            // Verificar qual botão de operação foi pressionado
-            string operacao = ((Button)sender).Text;
-
-            switch (operacao)
-            {
-                case "Soma":
-                    buttonSoma_Click(sender, e);
-                    break;
-                case "Subtração":
-                    buttonSubtracao_Click(sender, e);
-                    break;
-                case "Multiplicação":
-                    buttonMultiplicacao_Click(sender, e);
-                    break;
-                case "Divisão":
-                    buttonDivisao_Click(sender, e);
-                    break;
-            }
-        }
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -100,5 +79,24 @@ namespace Calculadora
         {
 
         }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonLimpar_Click(object sender, EventArgs e)
+        {
+            // Limpar os TextBox
+            textBoxNumero1.Text = "";
+            textBoxNumero2.Text = "";
+            textBoxResultado.Text = "";
+        }
+
     }
 }
