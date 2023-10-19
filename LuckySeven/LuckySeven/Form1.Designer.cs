@@ -123,7 +123,7 @@
             this.lblWins.Size = new System.Drawing.Size(89, 19);
             this.lblWins.TabIndex = 9;
             this.lblWins.Text = "Ganhou: 0";
-            this.lblWins.Click += new System.EventHandler(this.label5_Click);
+            this.lblWins.Click += new System.EventHandler(this.lblWins_Click);
             // 
             // pictureBox1
             // 
