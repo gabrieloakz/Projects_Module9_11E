@@ -120,9 +120,9 @@
             this.lblWins.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblWins.Location = new System.Drawing.Point(717, 99);
             this.lblWins.Name = "lblWins";
-            this.lblWins.Size = new System.Drawing.Size(89, 19);
+            this.lblWins.Size = new System.Drawing.Size(86, 19);
             this.lblWins.TabIndex = 9;
-            this.lblWins.Text = "Ganhou: 0";
+            this.lblWins.Text = "Vitórias: 0";
             this.lblWins.Click += new System.EventHandler(this.lblWins_Click);
             // 
             // pictureBox1

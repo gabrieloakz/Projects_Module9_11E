@@ -15,7 +15,7 @@ namespace LuckySeven
 {
     public partial class Form1 : Form
     {
-        private int jogadasVitoriosas = 0;
+        private int vitorias = 0;
 
         public Form1()
         {
@@ -98,8 +98,8 @@ namespace LuckySeven
                     pictureBox1.Visible = true;
                     SystemSounds.Beep.Play();
                     creditos++;
-                    jogadasVitoriosas++;
-                    lblWins.Text = "Jogadas Vitoriosas: " + jogadasVitoriosas;
+                    vitorias++;
+                    lblWins.Text = "Vitórias: " + vitorias;
                 }
                 else if (resultado == 2)
                 {
@@ -107,8 +107,8 @@ namespace LuckySeven
                     pictureBox1.Visible = true;
                     SystemSounds.Beep.Play();
                     creditos += 2;
-                    jogadasVitoriosas++;
-                    lblWins.Text = "Jogadas Vitoriosas: " + jogadasVitoriosas;
+                    vitorias++;
+                    lblWins.Text = "Vitórias: " + vitorias;
                 }
                 else if (resultado == 3)
                 {
@@ -116,8 +116,8 @@ namespace LuckySeven
                     pictureBox1.Visible = true;
                     SystemSounds.Beep.Play();
                     creditos += 5;
-                    jogadasVitoriosas++;
-                    lblWins.Text = "Jogadas Vitoriosas: " + jogadasVitoriosas;
+                    vitorias++;
+                    lblWins.Text = "Vitórias: " + vitorias;
                 }
                 else if (resultado == 4)
                 {
@@ -139,8 +139,8 @@ namespace LuckySeven
                     label2.Text = "";
                     label3.Text = "";
                     creditos = 10;
-                    jogadasVitoriosas = 0;
-                    lblWins.Text = "Jogadas Vitoriosas: " + jogadasVitoriosas;
+                    vitorias = 0;
+                    lblWins.Text = "Vitórias: " + vitorias;
                 }
                 else
                 {
