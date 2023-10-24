@@ -246,7 +246,7 @@ namespace Dice_Poker
             chkDado4.Checked = false;
             chkDado5.Visible = false;
             chkDado5.Checked = false;
-            
+
             chkDados.Visible = false;
             chkDados.Visible = false;
 
@@ -254,13 +254,104 @@ namespace Dice_Poker
 
         private void VerificarResultadoJogada()
         {
-            //array para manter a contagem do número em cada mao
-        }
+            //array para manter a contagem do número em cada mão
+            int[] dadosArray = new int[6];
 
+            //variável para controlar a execução do loop
+            int i = 1;
+
+            //iterar seis vezes para manter a contagem do total
+            //de 1s, 2s, 3s, 4s, 5s e 6s que foram rolados
+            for (int i = 1; i < 7; i++)
+            {
+                if (dado1 == i) dadosArray[i] += 1;
+                if (dado2 == i) dadosArray[i] += 1;
+                if (dado3 == i) dadosArray[i] += 1;
+                if (dado4 == i) dadosArray[i] += 1;
+                if (dado5 == i) dadosArray[i] += 1;
+            }
+
+            //iterar seis vezes para contar as mãos vencedoras
+            for (int i = 1; i < 7; i++)
+            {
+                //ver se o jogador tem 5 do mesmo tipo
+                if (dadosArray[i] == 5)
+                {
+                    creditos += 4;
+                    txtOutput.Text = "GANHOU! 5 of a kind.\nGanhou 4 créditos.";
+                }
+
+                //ver se o jogador tem 4 do mesmo tipo
+                if (dadosArray[i] == 4)
+                {
+                    creditos += 3;
+                    txtOutput.Text = "GANHOU! 4 of a kind.\nGanhou 3 créditos.";
+                }
+
+                //ver se o jogador tem 3 do mesmo tipo ou Full House (3 + 2)
+                if (dadosArray[i] == 3)
+                {
+                    //tem 3 do mesmo tipo
+                    bool fullHouse = false;
+
+                    //verificar se tem 2 do mesmo tipo
+                    for (int j = 1; j < 7; j++)
+                    {
+                        if (dadosArray[j] == 2)
+                        {
+                            fullHouse = true;
+                            creditos += 2;
+                            txtOutput.Text = "GANHOU! Full House.\nGanhou 2 créditos.";
+                            return;
+                        }
+                    }
+
+                    if (fullHouse == false)
+                    {
+                        creditos += 1;
+                        txtOutput.Text = "GANHOU! 3 of a kind.\nGanhou 1 crédito.";
+                        return;
+                    }
+                }
+
+                //iterar os dados 2 a 6 à procura de um High Straight
+                //cada uma das posições só pode conter o valor 1
+                for (int i = 2; i < 7; j++)
+                {
+                    if (dadosArray[i] != 1) return;
+                    else
+                    {
+                        //quando terminar 
+                        if (i == 6)
+                        {
+                            creditos += 3;
+                            txtOutput.Text = "GANHOU! High Straight.\nGanhou 3 créditos.";
+                            return;
+                        }
+                    }
+                }
+
+                for (int i = 1; i < 5; i++)
+                {
+                    if (dadosArray[i] != 1) return;
+                    else
+                    {
+                        if (i == 5)
+                        {
+                            creditos += 3;
+                            txtOutput.Text = "GANHOU! Low Straight.\nGanhou 3 créditos.";
+                            return;
+                        }
+                    }
+                }
+
+                //atualizar o preço da jogada
+                creditos -= 2;
+                txtOutput.Text = "SORRY! Perdeu esta mão e 2 créditos.";
+            }
+        }
 
         private void lblLegenda_Click(object sender, EventArgs e)
         {
 
         }
-    }
-}
