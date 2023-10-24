@@ -43,6 +43,8 @@ namespace Dice_Poker
         private int dado4; //dado 4 => dado numero 4
         private int dado5; //dado 5 => dado numero 5
 
+        private int[] dadosArray = new int[7]; // Inicializa com zeros
+
         private void Form1_Load(object sender, EventArgs e)
         {
             //mostrar a imagem branca nas picturebox dos dados
@@ -103,10 +105,10 @@ namespace Dice_Poker
             {
                 //assinalar o dado a manter pelo jogador
                 if (chkDado1.Checked == true) saltaCase1 = true;
-                if (chkDado2.Checked == true) saltaCase1 = true;
-                if (chkDado3.Checked == true) saltaCase1 = true;
-                if (chkDado4.Checked == true) saltaCase1 = true;
-                if (chkDado5.Checked == true) saltaCase1 = true;
+                if (chkDado2.Checked == true) saltaCase2 = true;
+                if (chkDado3.Checked == true) saltaCase3 = true;
+                if (chkDado4.Checked == true) saltaCase4 = true;
+                if (chkDado5.Checked == true) saltaCase5 = true;
             }
 
             //certificar que vai ser gerado um número aleatório
@@ -272,7 +274,7 @@ namespace Dice_Poker
             }
 
             //iterar seis vezes para contar as mãos vencedoras
-            for ( i = 1; i < 7; i++)
+            for (i = 1; i < 7; i++)
             {
                 //ver se o jogador tem 5 do mesmo tipo
                 if (dadosArray[i] == 5)
@@ -318,7 +320,7 @@ namespace Dice_Poker
 
             //iterar os dados 2 a 6 à procura de um High Straight
             //cada uma das posições só pode conter o valor 1
-            for ( i = 2; i < 7; i++)
+            for (i = 2; i < 7; i++)
             {
                 if (dadosArray[i] != 1) return;
                 else
@@ -333,7 +335,7 @@ namespace Dice_Poker
                 }
             }
 
-            for ( i = 1; i < 5; i++)
+            for (i = 1; i < 5; i++)
             {
                 if (dadosArray[i] != 1) return;
                 else

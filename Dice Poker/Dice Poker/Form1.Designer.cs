@@ -62,11 +62,12 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(26, 24);
+            this.label1.Font = new System.Drawing.Font("AniMe Matrix - MB_EN", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(169, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.Size = new System.Drawing.Size(455, 39);
             this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
+            this.label1.Text = "DICE POKER DO GABI";
             // 
             // lblLegenda
             // 
@@ -80,9 +81,10 @@
             // pbDado1
             // 
             this.pbDado1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pbDado1.Location = new System.Drawing.Point(50, 84);
+            this.pbDado1.Image = global::Dice_Poker.Properties.Resources.png1;
+            this.pbDado1.Location = new System.Drawing.Point(64, 84);
             this.pbDado1.Name = "pbDado1";
-            this.pbDado1.Size = new System.Drawing.Size(100, 50);
+            this.pbDado1.Size = new System.Drawing.Size(100, 81);
             this.pbDado1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbDado1.TabIndex = 2;
             this.pbDado1.TabStop = false;
@@ -90,9 +92,10 @@
             // pbDado4
             // 
             this.pbDado4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pbDado4.Image = global::Dice_Poker.Properties.Resources.dado4;
             this.pbDado4.Location = new System.Drawing.Point(503, 84);
             this.pbDado4.Name = "pbDado4";
-            this.pbDado4.Size = new System.Drawing.Size(100, 50);
+            this.pbDado4.Size = new System.Drawing.Size(100, 81);
             this.pbDado4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbDado4.TabIndex = 3;
             this.pbDado4.TabStop = false;
@@ -100,9 +103,10 @@
             // pbDado3
             // 
             this.pbDado3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pbDado3.Image = global::Dice_Poker.Properties.Resources.dado3;
             this.pbDado3.Location = new System.Drawing.Point(359, 84);
             this.pbDado3.Name = "pbDado3";
-            this.pbDado3.Size = new System.Drawing.Size(100, 50);
+            this.pbDado3.Size = new System.Drawing.Size(100, 81);
             this.pbDado3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbDado3.TabIndex = 4;
             this.pbDado3.TabStop = false;
@@ -110,9 +114,10 @@
             // pbDado2
             // 
             this.pbDado2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pbDado2.Image = global::Dice_Poker.Properties.Resources.dado2;
             this.pbDado2.Location = new System.Drawing.Point(206, 84);
             this.pbDado2.Name = "pbDado2";
-            this.pbDado2.Size = new System.Drawing.Size(100, 50);
+            this.pbDado2.Size = new System.Drawing.Size(100, 81);
             this.pbDado2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbDado2.TabIndex = 5;
             this.pbDado2.TabStop = false;
@@ -120,7 +125,7 @@
             // chkDado1
             // 
             this.chkDado1.AutoSize = true;
-            this.chkDado1.Location = new System.Drawing.Point(79, 163);
+            this.chkDado1.Location = new System.Drawing.Point(64, 187);
             this.chkDado1.Name = "chkDado1";
             this.chkDado1.Size = new System.Drawing.Size(59, 17);
             this.chkDado1.TabIndex = 6;
@@ -131,9 +136,10 @@
             // pbDado5
             // 
             this.pbDado5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pbDado5.Location = new System.Drawing.Point(664, 84);
+            this.pbDado5.Image = global::Dice_Poker.Properties.Resources.dado5;
+            this.pbDado5.Location = new System.Drawing.Point(635, 84);
             this.pbDado5.Name = "pbDado5";
-            this.pbDado5.Size = new System.Drawing.Size(100, 50);
+            this.pbDado5.Size = new System.Drawing.Size(100, 81);
             this.pbDado5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbDado5.TabIndex = 10;
             this.pbDado5.TabStop = false;
@@ -190,7 +196,7 @@
             // chkDado2
             // 
             this.chkDado2.AutoSize = true;
-            this.chkDado2.Location = new System.Drawing.Point(220, 163);
+            this.chkDado2.Location = new System.Drawing.Point(226, 187);
             this.chkDado2.Name = "chkDado2";
             this.chkDado2.Size = new System.Drawing.Size(59, 17);
             this.chkDado2.TabIndex = 17;
@@ -201,7 +207,7 @@
             // chkDado3
             // 
             this.chkDado3.AutoSize = true;
-            this.chkDado3.Location = new System.Drawing.Point(371, 163);
+            this.chkDado3.Location = new System.Drawing.Point(376, 187);
             this.chkDado3.Name = "chkDado3";
             this.chkDado3.Size = new System.Drawing.Size(59, 17);
             this.chkDado3.TabIndex = 18;
@@ -212,7 +218,7 @@
             // chkDado4
             // 
             this.chkDado4.AutoSize = true;
-            this.chkDado4.Location = new System.Drawing.Point(519, 163);
+            this.chkDado4.Location = new System.Drawing.Point(523, 187);
             this.chkDado4.Name = "chkDado4";
             this.chkDado4.Size = new System.Drawing.Size(59, 17);
             this.chkDado4.TabIndex = 19;
@@ -234,7 +240,7 @@
             // chkDado5
             // 
             this.chkDado5.AutoSize = true;
-            this.chkDado5.Location = new System.Drawing.Point(674, 163);
+            this.chkDado5.Location = new System.Drawing.Point(658, 187);
             this.chkDado5.Name = "chkDado5";
             this.chkDado5.Size = new System.Drawing.Size(59, 17);
             this.chkDado5.TabIndex = 21;
