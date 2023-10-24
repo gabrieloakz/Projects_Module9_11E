@@ -3,3 +3,8 @@ C:\Users\53023\Documents\GitHub\Projects_Module9_11E\Dice Poker\Dice Poker\obj\D
 C:\Users\53023\Documents\GitHub\Projects_Module9_11E\Dice Poker\Dice Poker\obj\Debug\Dice_Poker.Properties.Resources.resources
 C:\Users\53023\Documents\GitHub\Projects_Module9_11E\Dice Poker\Dice Poker\obj\Debug\Dice Poker.csproj.GenerateResource.cache
 C:\Users\53023\Documents\GitHub\Projects_Module9_11E\Dice Poker\Dice Poker\obj\Debug\Dice Poker.csproj.CoreCompileInputs.cache
+C:\Users\53023\Documents\GitHub\Projects_Module9_11E\Dice Poker\Dice Poker\bin\Debug\Dice Poker.exe.config
+C:\Users\53023\Documents\GitHub\Projects_Module9_11E\Dice Poker\Dice Poker\bin\Debug\Dice Poker.exe
+C:\Users\53023\Documents\GitHub\Projects_Module9_11E\Dice Poker\Dice Poker\bin\Debug\Dice Poker.pdb
+C:\Users\53023\Documents\GitHub\Projects_Module9_11E\Dice Poker\Dice Poker\obj\Debug\Dice Poker.exe
+C:\Users\53023\Documents\GitHub\Projects_Module9_11E\Dice Poker\Dice Poker\obj\Debug\Dice Poker.pdb

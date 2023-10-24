@@ -76,7 +76,6 @@
             this.lblLegenda.TabIndex = 1;
             this.lblLegenda.Text = "5 of a kind = $4   Full House = $2\r\n4 of a kind = $3   High Straight = $3   \r\n3 o" +
     "f a kind = $1   Low Straight = $3";
-            this.lblLegenda.Click += new System.EventHandler(this.lblLegenda_Click);
             // 
             // pbDado1
             // 
@@ -90,7 +89,7 @@
             // 
             // pbDado4
             // 
-            this.pbDado4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pbDado4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pbDado4.Location = new System.Drawing.Point(503, 84);
             this.pbDado4.Name = "pbDado4";
             this.pbDado4.Size = new System.Drawing.Size(100, 50);
@@ -242,10 +241,6 @@
             this.chkDado5.Text = "Manter\r\n";
             this.chkDado5.UseVisualStyleBackColor = true;
             this.chkDado5.Visible = false;
-            // 
-            // timer1
-            // 
-            this.timer1.Interval = 1000;
             // 
             // imgDados
             // 

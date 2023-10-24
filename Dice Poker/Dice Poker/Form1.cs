@@ -37,12 +37,11 @@ namespace Dice_Poker
         private int nrJogadas;
 
         private int contador; //variável contador
-        private int dado1; //dado com a face 1
-        private int dado2; //dado com a face 2
-        private int dado3; //dado com a face 3
-        private int dado4; //dado com a face 4
-        private int dado5; //dado com a face 5
-        private int dado6; //dado com a face 6
+        private int dado1; //dado 1 => dado numero 1
+        private int dado2; //dado 2 => dado numero 2
+        private int dado3; //dado 3 => dado numero 3
+        private int dado4; //dado 4 => dado numero 4
+        private int dado5; //dado 5 => dado numero 5
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -127,7 +126,7 @@ namespace Dice_Poker
                         if (x == 4) pbDado1.Image = imgDados.Images[4];
                         if (x == 5) pbDado1.Image = imgDados.Images[5];
                         if (x == 6) pbDado1.Image = imgDados.Images[6];
-
+                        dado1 = x;
                     }
                     break;
 
@@ -141,6 +140,7 @@ namespace Dice_Poker
                         if (x == 4) pbDado1.Image = imgDados.Images[4];
                         if (x == 5) pbDado1.Image = imgDados.Images[5];
                         if (x == 6) pbDado1.Image = imgDados.Images[6];
+                        dado2 = x;
                     }
                     break;
 
@@ -262,7 +262,7 @@ namespace Dice_Poker
 
             //iterar seis vezes para manter a contagem do total
             //de 1s, 2s, 3s, 4s, 5s e 6s que foram rolados
-            for (int i = 1; i < 7; i++)
+            for (i = 1; i < 7; i++)
             {
                 if (dado1 == i) dadosArray[i] += 1;
                 if (dado2 == i) dadosArray[i] += 1;
@@ -272,7 +272,7 @@ namespace Dice_Poker
             }
 
             //iterar seis vezes para contar as mãos vencedoras
-            for (int i = 1; i < 7; i++)
+            for ( i = 1; i < 7; i++)
             {
                 //ver se o jogador tem 5 do mesmo tipo
                 if (dadosArray[i] == 5)
@@ -314,41 +314,42 @@ namespace Dice_Poker
                     }
                 }
 
-                //iterar os dados 2 a 6 à procura de um High Straight
-                //cada uma das posições só pode conter o valor 1
-                for (int i = 2; i < 7; j++)
-                {
-                    if (dadosArray[i] != 1) return;
-                    else
-                    {
-                        //quando terminar 
-                        if (i == 6)
-                        {
-                            creditos += 3;
-                            txtOutput.Text = "GANHOU! High Straight.\nGanhou 3 créditos.";
-                            return;
-                        }
-                    }
-                }
-
-                for (int i = 1; i < 5; i++)
-                {
-                    if (dadosArray[i] != 1) return;
-                    else
-                    {
-                        if (i == 5)
-                        {
-                            creditos += 3;
-                            txtOutput.Text = "GANHOU! Low Straight.\nGanhou 3 créditos.";
-                            return;
-                        }
-                    }
-                }
-
-                //atualizar o preço da jogada
-                creditos -= 2;
-                txtOutput.Text = "SORRY! Perdeu esta mão e 2 créditos.";
             }
+
+            //iterar os dados 2 a 6 à procura de um High Straight
+            //cada uma das posições só pode conter o valor 1
+            for ( i = 2; i < 7; i++)
+            {
+                if (dadosArray[i] != 1) return;
+                else
+                {
+                    //quando terminar 
+                    if (i == 6)
+                    {
+                        creditos += 3;
+                        txtOutput.Text = "GANHOU! High Straight.\nGanhou 3 créditos.";
+                        return;
+                    }
+                }
+            }
+
+            for ( i = 1; i < 5; i++)
+            {
+                if (dadosArray[i] != 1) return;
+                else
+                {
+                    if (i == 5)
+                    {
+                        creditos += 3;
+                        txtOutput.Text = "GANHOU! Low Straight.\nGanhou 3 créditos.";
+                        return;
+                    }
+                }
+            }
+
+            //atualizar o preço da jogada
+            creditos -= 2;
+            txtOutput.Text = "SORRY! Perdeu esta mão e 2 créditos.";
         }
 
         private void AtualizarConta()
@@ -391,7 +392,7 @@ namespace Dice_Poker
 
         }
 
-        private void chkDados_CheckedChanged(object sender, EventArgs e) 
+        private void chkDados_CheckedChanged(object sender, EventArgs e)
         {
             //se o jogador seleciona "manter tudo"
             if (chkDados.Checked == true)
@@ -419,7 +420,6 @@ namespace Dice_Poker
             Application.Exit();
         }
 
-        private void lblLegenda_Click(object sender, EventArgs e)
-        {
+    }
 
-        }
+}
