@@ -139,9 +139,9 @@
             this.lblCreditos.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCreditos.Location = new System.Drawing.Point(717, 118);
             this.lblCreditos.Name = "lblCreditos";
-            this.lblCreditos.Size = new System.Drawing.Size(80, 19);
+            this.lblCreditos.Size = new System.Drawing.Size(102, 19);
             this.lblCreditos.TabIndex = 11;
-            this.lblCreditos.Text = "Créditos:";
+            this.lblCreditos.Text = "Créditos: 10";
             // 
             // Form1
             // 
