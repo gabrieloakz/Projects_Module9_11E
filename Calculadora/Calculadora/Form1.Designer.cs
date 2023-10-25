@@ -119,7 +119,7 @@
             this.label1.Size = new System.Drawing.Size(432, 43);
             this.label1.TabIndex = 8;
             this.label1.Text = "Calculadora do Gabriel";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            //this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -130,7 +130,7 @@
             this.label2.Size = new System.Drawing.Size(167, 17);
             this.label2.TabIndex = 9;
             this.label2.Text = "1) Insira o 1º Número:";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            //this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -151,7 +151,7 @@
             this.label4.Size = new System.Drawing.Size(176, 17);
             this.label4.TabIndex = 11;
             this.label4.Text = "3) Escolha a operação:";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+            //this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 
@@ -162,7 +162,7 @@
             this.label5.Size = new System.Drawing.Size(104, 17);
             this.label5.TabIndex = 12;
             this.label5.Text = "4) Resultado:";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
+            //this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // buttonLimpar
             // 

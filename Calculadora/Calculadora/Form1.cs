@@ -16,7 +16,6 @@ namespace Calculadora
         {
             InitializeComponent();
         }
-
         private void buttonSoma_Click(object sender, EventArgs e)
         {
             // Obter os valores dos TextBox
@@ -29,7 +28,6 @@ namespace Calculadora
             // Exibir o resultado em outra textbox 
             textBoxResultado.Text = resultado.ToString();
         }
-
         private void buttonSubtracao_Click(object sender, EventArgs e)
         {
             // Obter os valores dos TextBox
@@ -42,7 +40,6 @@ namespace Calculadora
             // Exibir o resultado em outra textbox 
             textBoxResultado.Text = resultado.ToString();
         }
-
         private void buttonMultiplicacao_Click(object sender, EventArgs e)
         {
             // Obter os valores dos TextBox
@@ -55,7 +52,6 @@ namespace Calculadora
             // Exibir o resultado em outra textbox 
             textBoxResultado.Text = resultado.ToString();
         }
-
         private void buttonDivisao_Click(object sender, EventArgs e)
         {
             // Obter os valores dos TextBox
@@ -68,28 +64,6 @@ namespace Calculadora
             // Exibir o resultado em outra textbox 
             textBoxResultado.Text = resultado.ToString();
         }
-
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void buttonLimpar_Click(object sender, EventArgs e)
         {
             // Limpar os TextBox

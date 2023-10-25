@@ -16,10 +16,17 @@ namespace LuckySeven
     public partial class Form1 : Form
     {
         private int vitorias = 0;
+        private int creditos = 10; // Adicione uma variável para rastrear os créditos.
 
         public Form1()
         {
             InitializeComponent();
+        }
+
+        // Função para atualizar a label de créditos.
+        public void AtualizarCreditos(int creditos)
+        {
+            lblCreditos.Text = "Créditos: " + creditos;
         }
 
         public int Jogada()
@@ -42,31 +49,6 @@ namespace LuckySeven
             }
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblWins_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnExit_Click(object sender, EventArgs e)
         {
             DialogResult resposta;
@@ -80,8 +62,6 @@ namespace LuckySeven
         private void btnSpin_Click(object sender, EventArgs e)
         {
             pictureBox1.Visible = false;
-            int creditos = 10;
-            int resultado;
             Random rnd = new Random();
 
             if (creditos > 0)
@@ -90,7 +70,8 @@ namespace LuckySeven
                 label2.Text = (rnd.Next(1, 10)).ToString();
                 label3.Text = (rnd.Next(1, 10)).ToString();
                 creditos--;
-                resultado = Jogada();
+                AtualizarCreditos(creditos); // Atualize a label de créditos.
+                int resultado = Jogada();
 
                 if (resultado == 1)
                 {
@@ -100,6 +81,7 @@ namespace LuckySeven
                     creditos++;
                     vitorias++;
                     lblWins.Text = "Vitórias: " + vitorias;
+                    AtualizarCreditos(creditos); // Atualize a label de créditos.
                 }
                 else if (resultado == 2)
                 {
@@ -109,6 +91,7 @@ namespace LuckySeven
                     creditos += 2;
                     vitorias++;
                     lblWins.Text = "Vitórias: " + vitorias;
+                    AtualizarCreditos(creditos); // Atualize a label de créditos.
                 }
                 else if (resultado == 3)
                 {
@@ -118,6 +101,7 @@ namespace LuckySeven
                     creditos += 5;
                     vitorias++;
                     lblWins.Text = "Vitórias: " + vitorias;
+                    AtualizarCreditos(creditos); // Atualize a label de créditos.
                 }
                 else if (resultado == 4)
                 {
@@ -141,6 +125,7 @@ namespace LuckySeven
                     creditos = 10;
                     vitorias = 0;
                     lblWins.Text = "Vitórias: " + vitorias;
+                    AtualizarCreditos(creditos); // Atualize a label de créditos.
                 }
                 else
                 {
@@ -148,5 +133,7 @@ namespace LuckySeven
                 }
             }
         }
+
+
     }
 }
