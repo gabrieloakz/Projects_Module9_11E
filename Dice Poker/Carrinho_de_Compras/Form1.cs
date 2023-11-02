@@ -12,6 +12,10 @@ namespace Carrinho_de_Compras
 {
     public partial class Form1 : Form
     {
+        // Array para representar os produtos selecionados
+        string[] carrinho = new string[10];
+        int indiceCarrinho = 0;
+
         public Form1()
         {
             InitializeComponent();
@@ -23,7 +27,7 @@ namespace Carrinho_de_Compras
         private void comboBoxCategoria_SelectedIndexChanged_1(object sender, EventArgs e)
         {
             string categoriaSelecionada = comboBoxCategoria.SelectedItem.ToString();
-            int[] produtosSelecionados = { };
+
 
             // Lógica para carregar os produtos da categoria selecionada
             if (categoriaSelecionada == "Hardware")
@@ -46,6 +50,36 @@ namespace Carrinho_de_Compras
                 listBoxProdutos.Items.Add("- Visual Studio");
             }
         }
+
+        private void btnAdicionarAoCarrinho_Click_1(object sender, EventArgs e)
+        {
+            if (listBoxProdutos.SelectedItem != null)
+            {
+                string produtoSelecionado = listBoxProdutos.SelectedItem.ToString();
+                carrinho[indiceCarrinho] = produtoSelecionado;
+                indiceCarrinho++;
+
+                AtualizarListBoxProdutosSelecionados();
+            }
+            else
+            {
+                listBoxProdutosSelecionados.Text = "Nenhum produto selecionado";
+            }
+        }
+
+        private void AtualizarListBoxProdutosSelecionados()
+        {
+            listBoxProdutosSelecionados.Items.Clear();
+
+            foreach (string produto in carrinho)
+            {
+                if (produto != null)
+                {
+                    listBoxProdutosSelecionados.Items.Add(produto);
+                }
+            }
+        }
+
     }
 }
 

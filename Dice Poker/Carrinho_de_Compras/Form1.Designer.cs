@@ -31,7 +31,7 @@
             this.lblTitulo = new System.Windows.Forms.Label();
             this.comboBoxCategoria = new System.Windows.Forms.ComboBox();
             this.listBoxProdutos = new System.Windows.Forms.ListBox();
-            this.btnExibirProdutos = new System.Windows.Forms.Button();
+            this.btnAdicionarAoCarrinho = new System.Windows.Forms.Button();
             this.labelCarrinho = new System.Windows.Forms.Label();
             this.listBoxProdutosSelecionados = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -43,7 +43,7 @@
             this.lblTitulo.BackColor = System.Drawing.SystemColors.Info;
             this.lblTitulo.Font = new System.Drawing.Font("Agency FB", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitulo.ForeColor = System.Drawing.Color.Red;
-            this.lblTitulo.Location = new System.Drawing.Point(45, 23);
+            this.lblTitulo.Location = new System.Drawing.Point(46, 26);
             this.lblTitulo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(274, 59);
@@ -76,23 +76,26 @@
             this.listBoxProdutos.Size = new System.Drawing.Size(160, 112);
             this.listBoxProdutos.TabIndex = 2;
             // 
-            // btnExibirProdutos
+            // btnAdicionarAoCarrinho
             // 
-            this.btnExibirProdutos.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExibirProdutos.Location = new System.Drawing.Point(55, 298);
-            this.btnExibirProdutos.Margin = new System.Windows.Forms.Padding(4);
-            this.btnExibirProdutos.Name = "btnExibirProdutos";
-            this.btnExibirProdutos.Size = new System.Drawing.Size(161, 28);
-            this.btnExibirProdutos.TabIndex = 3;
-            this.btnExibirProdutos.Text = "ExibirProdutos";
-            this.btnExibirProdutos.UseVisualStyleBackColor = true;
-            this.btnExibirProdutos.Click += new System.EventHandler(this.btnExibirProdutos_Click);
+            this.btnAdicionarAoCarrinho.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnAdicionarAoCarrinho.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdicionarAoCarrinho.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.btnAdicionarAoCarrinho.Location = new System.Drawing.Point(55, 298);
+            this.btnAdicionarAoCarrinho.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAdicionarAoCarrinho.Name = "btnAdicionarAoCarrinho";
+            this.btnAdicionarAoCarrinho.Size = new System.Drawing.Size(161, 28);
+            this.btnAdicionarAoCarrinho.TabIndex = 3;
+            this.btnAdicionarAoCarrinho.Text = "Adicionar ao Carrinho";
+            this.btnAdicionarAoCarrinho.UseVisualStyleBackColor = false;
+            this.btnAdicionarAoCarrinho.Click += new System.EventHandler(this.btnAdicionarAoCarrinho_Click_1);
             // 
             // labelCarrinho
             // 
             this.labelCarrinho.AutoSize = true;
             this.labelCarrinho.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCarrinho.Location = new System.Drawing.Point(53, 347);
+            this.labelCarrinho.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.labelCarrinho.Location = new System.Drawing.Point(267, 102);
             this.labelCarrinho.Name = "labelCarrinho";
             this.labelCarrinho.Size = new System.Drawing.Size(170, 18);
             this.labelCarrinho.TabIndex = 4;
@@ -103,9 +106,9 @@
             this.listBoxProdutosSelecionados.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBoxProdutosSelecionados.FormattingEnabled = true;
             this.listBoxProdutosSelecionados.ItemHeight = 18;
-            this.listBoxProdutosSelecionados.Location = new System.Drawing.Point(55, 380);
+            this.listBoxProdutosSelecionados.Location = new System.Drawing.Point(277, 133);
             this.listBoxProdutosSelecionados.Name = "listBoxProdutosSelecionados";
-            this.listBoxProdutosSelecionados.Size = new System.Drawing.Size(160, 94);
+            this.listBoxProdutosSelecionados.Size = new System.Drawing.Size(160, 382);
             this.listBoxProdutosSelecionados.TabIndex = 5;
             // 
             // label1
@@ -113,6 +116,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.Info;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.MenuText;
             this.label1.Location = new System.Drawing.Point(53, 102);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(190, 18);
@@ -128,11 +132,12 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.listBoxProdutosSelecionados);
             this.Controls.Add(this.labelCarrinho);
-            this.Controls.Add(this.btnExibirProdutos);
+            this.Controls.Add(this.btnAdicionarAoCarrinho);
             this.Controls.Add(this.listBoxProdutos);
             this.Controls.Add(this.comboBoxCategoria);
             this.Controls.Add(this.lblTitulo);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -147,7 +152,7 @@
         private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.ComboBox comboBoxCategoria;
         private System.Windows.Forms.ListBox listBoxProdutos;
-        private System.Windows.Forms.Button btnExibirProdutos;
+        private System.Windows.Forms.Button btnAdicionarAoCarrinho;
         private System.Windows.Forms.Label labelCarrinho;
         private System.Windows.Forms.ListBox listBoxProdutosSelecionados;
         private System.Windows.Forms.Label label1;
