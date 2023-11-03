@@ -33,8 +33,10 @@
             this.listBoxProdutos = new System.Windows.Forms.ListBox();
             this.btnAdicionarAoCarrinho = new System.Windows.Forms.Button();
             this.labelCarrinho = new System.Windows.Forms.Label();
-            this.listBoxProdutosSelecionados = new System.Windows.Forms.ListBox();
+            this.listBoxCarrinho = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnRemoverDoCarrinho = new System.Windows.Forms.Button();
+            this.btnLimparCarrinho = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblTitulo
@@ -55,9 +57,6 @@
             // 
             this.comboBoxCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxCategoria.FormattingEnabled = true;
-            this.comboBoxCategoria.Items.AddRange(new object[] {
-            "Hardware",
-            "Software"});
             this.comboBoxCategoria.Location = new System.Drawing.Point(56, 133);
             this.comboBoxCategoria.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxCategoria.Name = "comboBoxCategoria";
@@ -78,7 +77,8 @@
             // 
             // btnAdicionarAoCarrinho
             // 
-            this.btnAdicionarAoCarrinho.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnAdicionarAoCarrinho.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnAdicionarAoCarrinho.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnAdicionarAoCarrinho.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdicionarAoCarrinho.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.btnAdicionarAoCarrinho.Location = new System.Drawing.Point(55, 298);
@@ -101,15 +101,15 @@
             this.labelCarrinho.TabIndex = 4;
             this.labelCarrinho.Text = "Carrinho de Compras";
             // 
-            // listBoxProdutosSelecionados
+            // listBoxCarrinho
             // 
-            this.listBoxProdutosSelecionados.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBoxProdutosSelecionados.FormattingEnabled = true;
-            this.listBoxProdutosSelecionados.ItemHeight = 18;
-            this.listBoxProdutosSelecionados.Location = new System.Drawing.Point(277, 133);
-            this.listBoxProdutosSelecionados.Name = "listBoxProdutosSelecionados";
-            this.listBoxProdutosSelecionados.Size = new System.Drawing.Size(160, 382);
-            this.listBoxProdutosSelecionados.TabIndex = 5;
+            this.listBoxCarrinho.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBoxCarrinho.FormattingEnabled = true;
+            this.listBoxCarrinho.ItemHeight = 18;
+            this.listBoxCarrinho.Location = new System.Drawing.Point(277, 133);
+            this.listBoxCarrinho.Name = "listBoxCarrinho";
+            this.listBoxCarrinho.Size = new System.Drawing.Size(160, 382);
+            this.listBoxCarrinho.TabIndex = 5;
             // 
             // label1
             // 
@@ -123,17 +123,49 @@
             this.label1.TabIndex = 6;
             this.label1.Text = "- Oque deseja comprar?";
             // 
+            // btnRemoverDoCarrinho
+            // 
+            this.btnRemoverDoCarrinho.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnRemoverDoCarrinho.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnRemoverDoCarrinho.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRemoverDoCarrinho.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.btnRemoverDoCarrinho.Location = new System.Drawing.Point(56, 334);
+            this.btnRemoverDoCarrinho.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRemoverDoCarrinho.Name = "btnRemoverDoCarrinho";
+            this.btnRemoverDoCarrinho.Size = new System.Drawing.Size(161, 28);
+            this.btnRemoverDoCarrinho.TabIndex = 7;
+            this.btnRemoverDoCarrinho.Text = "Remover Produto ";
+            this.btnRemoverDoCarrinho.UseVisualStyleBackColor = false;
+            this.btnRemoverDoCarrinho.Click += new System.EventHandler(this.btnRemoverDoCarrinho_Click);
+            // 
+            // btnLimparCarrinho
+            // 
+            this.btnLimparCarrinho.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnLimparCarrinho.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnLimparCarrinho.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimparCarrinho.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.btnLimparCarrinho.Location = new System.Drawing.Point(56, 370);
+            this.btnLimparCarrinho.Margin = new System.Windows.Forms.Padding(4);
+            this.btnLimparCarrinho.Name = "btnLimparCarrinho";
+            this.btnLimparCarrinho.Size = new System.Drawing.Size(161, 28);
+            this.btnLimparCarrinho.TabIndex = 8;
+            this.btnLimparCarrinho.Text = "Limpar Carrinho";
+            this.btnLimparCarrinho.UseVisualStyleBackColor = false;
+            this.btnLimparCarrinho.Click += new System.EventHandler(this.btnLimparCarrinho_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.btnLimparCarrinho);
+            this.Controls.Add(this.btnRemoverDoCarrinho);
+            this.Controls.Add(this.listBoxProdutos);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.listBoxProdutosSelecionados);
+            this.Controls.Add(this.listBoxCarrinho);
             this.Controls.Add(this.labelCarrinho);
             this.Controls.Add(this.btnAdicionarAoCarrinho);
-            this.Controls.Add(this.listBoxProdutos);
             this.Controls.Add(this.comboBoxCategoria);
             this.Controls.Add(this.lblTitulo);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -154,8 +186,10 @@
         private System.Windows.Forms.ListBox listBoxProdutos;
         private System.Windows.Forms.Button btnAdicionarAoCarrinho;
         private System.Windows.Forms.Label labelCarrinho;
-        private System.Windows.Forms.ListBox listBoxProdutosSelecionados;
+        private System.Windows.Forms.ListBox listBoxCarrinho;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnRemoverDoCarrinho;
+        private System.Windows.Forms.Button btnLimparCarrinho;
     }
 }
 

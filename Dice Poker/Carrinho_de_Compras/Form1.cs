@@ -19,6 +19,9 @@ namespace Carrinho_de_Compras
         public Form1()
         {
             InitializeComponent();
+            comboBoxCategoria.Items.Add("Hardware");
+            comboBoxCategoria.Items.Add("Software");
+
         }
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -27,7 +30,6 @@ namespace Carrinho_de_Compras
         private void comboBoxCategoria_SelectedIndexChanged_1(object sender, EventArgs e)
         {
             string categoriaSelecionada = comboBoxCategoria.SelectedItem.ToString();
-
 
             // Lógica para carregar os produtos da categoria selecionada
             if (categoriaSelecionada == "Hardware")
@@ -59,27 +61,48 @@ namespace Carrinho_de_Compras
                 carrinho[indiceCarrinho] = produtoSelecionado;
                 indiceCarrinho++;
 
-                AtualizarListBoxProdutosSelecionados();
+                AtualizarListBoxCarrinho();
             }
             else
             {
-                listBoxProdutosSelecionados.Text = "Nenhum produto selecionado";
+                listBoxCarrinho.Text = "Nenhum produto selecionado";
             }
         }
 
-        private void AtualizarListBoxProdutosSelecionados()
+        private void AtualizarListBoxCarrinho()
         {
-            listBoxProdutosSelecionados.Items.Clear();
+            listBoxCarrinho.Items.Clear();
 
             foreach (string produto in carrinho)
             {
                 if (produto != null)
                 {
-                    listBoxProdutosSelecionados.Items.Add(produto);
+                    listBoxCarrinho.Items.Add(produto);
                 }
             }
         }
 
+        private void btnRemoverDoCarrinho_Click(object sender, EventArgs e)
+        {
+            if (listBoxProdutos.SelectedItem != null)
+            {
+                //string produtoRemover = listBoxCarrinho.SelectedItem.ToString();
+                carrinho[indiceCarrinho] = null;
+                indiceCarrinho--;
+
+                AtualizarListBoxCarrinho();
+            }
+            else
+            {
+                listBoxCarrinho.Text = "Carrinho está vazio!";
+            }
+
+        }
+
+        private void btnLimparCarrinho_Click(object sender, EventArgs e)
+        {
+            listBoxCarrinho.Items.Clear();
+        }
     }
 }
 
