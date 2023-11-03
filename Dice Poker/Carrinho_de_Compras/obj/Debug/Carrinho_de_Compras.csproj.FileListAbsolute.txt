@@ -2,9 +2,9 @@ C:\Users\53023\Documents\GitHub\Projects_Module9_11E\Dice Poker\Carrinho_de_Comp
 C:\Users\53023\Documents\GitHub\Projects_Module9_11E\Dice Poker\Carrinho_de_Compras\bin\Debug\Carrinho_de_Compras.exe
 C:\Users\53023\Documents\GitHub\Projects_Module9_11E\Dice Poker\Carrinho_de_Compras\bin\Debug\Carrinho_de_Compras.pdb
 C:\Users\53023\Documents\GitHub\Projects_Module9_11E\Dice Poker\Carrinho_de_Compras\obj\Debug\Carrinho_de_Compras.csproj.AssemblyReference.cache
-C:\Users\53023\Documents\GitHub\Projects_Module9_11E\Dice Poker\Carrinho_de_Compras\obj\Debug\Carrinho_de_Compras.Form1.resources
 C:\Users\53023\Documents\GitHub\Projects_Module9_11E\Dice Poker\Carrinho_de_Compras\obj\Debug\Carrinho_de_Compras.Properties.Resources.resources
 C:\Users\53023\Documents\GitHub\Projects_Module9_11E\Dice Poker\Carrinho_de_Compras\obj\Debug\Carrinho_de_Compras.csproj.GenerateResource.cache
 C:\Users\53023\Documents\GitHub\Projects_Module9_11E\Dice Poker\Carrinho_de_Compras\obj\Debug\Carrinho_de_Compras.csproj.CoreCompileInputs.cache
 C:\Users\53023\Documents\GitHub\Projects_Module9_11E\Dice Poker\Carrinho_de_Compras\obj\Debug\Carrinho_de_Compras.exe
 C:\Users\53023\Documents\GitHub\Projects_Module9_11E\Dice Poker\Carrinho_de_Compras\obj\Debug\Carrinho_de_Compras.pdb
+C:\Users\53023\Documents\GitHub\Projects_Module9_11E\Dice Poker\Carrinho_de_Compras\obj\Debug\Carrinho_de_Compras.Form1.resources
