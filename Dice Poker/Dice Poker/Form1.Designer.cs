@@ -153,6 +153,7 @@
             this.btnRolar.TabIndex = 13;
             this.btnRolar.Text = "Rolar os dados";
             this.btnRolar.UseVisualStyleBackColor = true;
+            this.btnRolar.Click += new System.EventHandler(this.btnRolar_Click_1);
             // 
             // btnExit
             // 
@@ -163,6 +164,7 @@
             this.btnExit.TabIndex = 14;
             this.btnExit.Text = "Sair";
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click_1);
             // 
             // groupBox1
             // 
@@ -248,17 +250,21 @@
             this.chkDado5.UseVisualStyleBackColor = true;
             this.chkDado5.Visible = false;
             // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            // 
             // imgDados
             // 
             this.imgDados.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imgDados.ImageStream")));
             this.imgDados.TransparentColor = System.Drawing.Color.Transparent;
-            this.imgDados.Images.SetKeyName(0, "png1.png");
-            this.imgDados.Images.SetKeyName(1, "dado2.png");
-            this.imgDados.Images.SetKeyName(2, "dado3.png");
-            this.imgDados.Images.SetKeyName(3, "dado4.png");
-            this.imgDados.Images.SetKeyName(4, "dado5.png");
-            this.imgDados.Images.SetKeyName(5, "dado6.png");
-            this.imgDados.Images.SetKeyName(6, "dado7.png");
+            this.imgDados.Images.SetKeyName(0, "dado0.png");
+            this.imgDados.Images.SetKeyName(1, "dado1.png");
+            this.imgDados.Images.SetKeyName(2, "dado2.png");
+            this.imgDados.Images.SetKeyName(3, "dado3.png");
+            this.imgDados.Images.SetKeyName(4, "dado4.png");
+            this.imgDados.Images.SetKeyName(5, "dado5.png");
+            this.imgDados.Images.SetKeyName(6, "dado6.png");
             // 
             // Form1
             // 

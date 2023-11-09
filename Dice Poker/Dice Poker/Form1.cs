@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 /* Code made by Gabriel 11ETGPSI */
@@ -58,10 +51,10 @@ namespace Dice_Poker
             txtOutput.Text = "Bem vindo!\nEstá pronto para jogar?" + "\nTem " + creditos.ToString() + " créditos.";
         }
 
-        private void btnRolar_Click(object sender, EventArgs e)
+        private void btnRolar_Click_1(object sender, EventArgs e)
         {
             //verificar se os dados foram lançados duas vezes
-            if (nrJogadas == 2)
+            if (nrJogadas == 3)
             {
                 //Altera o texto a mostra no botão
                 btnRolar.Text = "Rolar os dados";
@@ -75,17 +68,19 @@ namespace Dice_Poker
             if (btnRolar.Text == "Rolar os dados")
             {
                 cListaDados = false;
-                nrJogadas++;
+                nrJogadas += 1;
             }
             else
             {
-                cListaDados = false;
-                nrJogadas++;
+                cListaDados = true;
+                nrJogadas += 1;
             }
 
             //inciar o controlo do timer
             timer1.Enabled = true;
+
         }
+
 
         private void RolarOsDados(int x)
         {
@@ -111,80 +106,72 @@ namespace Dice_Poker
                 if (chkDado5.Checked == true) saltaCase5 = true;
             }
 
-            //certificar que vai ser gerado um número aleatório
             Random r = new Random();
-            rolar = r.Next(1, 6);
 
-            //testar valor gerado para determinar face do dado
-            switch (rolar)
+            //certificar que vai ser gerado um número aleatório
+            for (int i = 1; i < 6; i++)
             {
-                case 1:
-                    if (saltaCase1 == false)
-                    {
-                        //jogador optou por não guardar
-                        if (x == 1) pbDado1.Image = imgDados.Images[1];
-                        if (x == 2) pbDado1.Image = imgDados.Images[2];
-                        if (x == 3) pbDado1.Image = imgDados.Images[3];
-                        if (x == 4) pbDado1.Image = imgDados.Images[4];
-                        if (x == 5) pbDado1.Image = imgDados.Images[5];
-                        if (x == 6) pbDado1.Image = imgDados.Images[6];
-                        dado1 = x;
-                    }
-                    break;
+                
+                rolar = r.Next(1, 6);
 
-                case 2:
-                    if (saltaCase2 == false)
-                    {
-                        //jogador optou por não guardar
-                        if (x == 1) pbDado1.Image = imgDados.Images[1];
-                        if (x == 2) pbDado1.Image = imgDados.Images[2];
-                        if (x == 3) pbDado1.Image = imgDados.Images[3];
-                        if (x == 4) pbDado1.Image = imgDados.Images[4];
-                        if (x == 5) pbDado1.Image = imgDados.Images[5];
-                        if (x == 6) pbDado1.Image = imgDados.Images[6];
-                        dado2 = x;
-                    }
-                    break;
+                //testar valor gerado para determinar face do dado
 
-                case 3:
-                    if (saltaCase3 == false)
-                    {
-                        //jogador optou por não guardar
-                        if (x == 1) pbDado1.Image = imgDados.Images[1];
-                        if (x == 2) pbDado1.Image = imgDados.Images[2];
-                        if (x == 3) pbDado1.Image = imgDados.Images[3];
-                        if (x == 4) pbDado1.Image = imgDados.Images[4];
-                        if (x == 5) pbDado1.Image = imgDados.Images[5];
-                        if (x == 6) pbDado1.Image = imgDados.Images[6];
-                    }
-                    break;
+                if (i == 1 && saltaCase1 == false)
+                {
+                    //jogador optou por não guardar
+                    if (x == 1) pbDado1.Image = imgDados.Images[1];
+                    if (x == 2) pbDado1.Image = imgDados.Images[2];
+                    if (x == 3) pbDado1.Image = imgDados.Images[3];
+                    if (x == 4) pbDado1.Image = imgDados.Images[4];
+                    if (x == 5) pbDado1.Image = imgDados.Images[5];
+                    if (x == 6) pbDado1.Image = imgDados.Images[6];
 
-                case 4:
-                    if (saltaCase4 == false)
-                    {
-                        //jogador optou por não guardar
-                        if (x == 1) pbDado1.Image = imgDados.Images[1];
-                        if (x == 2) pbDado1.Image = imgDados.Images[2];
-                        if (x == 3) pbDado1.Image = imgDados.Images[3];
-                        if (x == 4) pbDado1.Image = imgDados.Images[4];
-                        if (x == 5) pbDado1.Image = imgDados.Images[5];
-                        if (x == 6) pbDado1.Image = imgDados.Images[6];
-                    }
-                    break;
+                }
 
-                case 5:
-                    if (saltaCase5 == false)
-                    {
-                        //jogador optou por não guardar
-                        if (x == 1) pbDado1.Image = imgDados.Images[1];
-                        if (x == 2) pbDado1.Image = imgDados.Images[2];
-                        if (x == 3) pbDado1.Image = imgDados.Images[3];
-                        if (x == 4) pbDado1.Image = imgDados.Images[4];
-                        if (x == 5) pbDado1.Image = imgDados.Images[5];
-                        if (x == 6) pbDado1.Image = imgDados.Images[6];
-                    }
-                    break;
+                if (i == 2 && saltaCase2 == false)
+                {
+                    //jogador optou por não guardar
+                    if (x == 1) pbDado2.Image = imgDados.Images[1];
+                    if (x == 2) pbDado2.Image = imgDados.Images[2];
+                    if (x == 3) pbDado2.Image = imgDados.Images[3];
+                    if (x == 4) pbDado2.Image = imgDados.Images[4];
+                    if (x == 5) pbDado2.Image = imgDados.Images[5];
+                    if (x == 6) pbDado2.Image = imgDados.Images[6];
 
+                }
+
+                if (i == 3 && saltaCase3 == false)
+                {
+                    //jogador optou por não guardar
+                    if (x == 1) pbDado3.Image = imgDados.Images[1];
+                    if (x == 2) pbDado3.Image = imgDados.Images[2];
+                    if (x == 3) pbDado3.Image = imgDados.Images[3];
+                    if (x == 4) pbDado3.Image = imgDados.Images[4];
+                    if (x == 5) pbDado3.Image = imgDados.Images[5];
+                    if (x == 6) pbDado3.Image = imgDados.Images[6];
+                }
+
+                if (i == 4 && saltaCase4 == false)
+                {
+                    //jogador optou por não guardar
+                    if (x == 1) pbDado4.Image = imgDados.Images[1];
+                    if (x == 2) pbDado4.Image = imgDados.Images[2];
+                    if (x == 3) pbDado4.Image = imgDados.Images[3];
+                    if (x == 4) pbDado4.Image = imgDados.Images[4];
+                    if (x == 5) pbDado4.Image = imgDados.Images[5];
+                    if (x == 6) pbDado4.Image = imgDados.Images[6];
+                }
+
+                if (i == 5 && saltaCase5 == false)
+                {
+                    //jogador optou por não guardar
+                    if (x == 1) pbDado5.Image = imgDados.Images[1];
+                    if (x == 2) pbDado5.Image = imgDados.Images[2];
+                    if (x == 3) pbDado5.Image = imgDados.Images[3];
+                    if (x == 4) pbDado5.Image = imgDados.Images[4];
+                    if (x == 5) pbDado5.Image = imgDados.Images[5];
+                    if (x == 6) pbDado5.Image = imgDados.Images[6];
+                }
             }
         }
 
@@ -194,10 +181,13 @@ namespace Dice_Poker
             int i;
 
             //chamar o procedimento RolarOsDados em cada interação
-            for (i = 1; i < 6; i++)
+            for (i = 1; i < 5; i++)
             {
                 RolarOsDados(i);
             }
+
+            //Gasta um credito
+            creditos -= 1;
 
             //incrementa o contador de jogadas
             contador += 1;
@@ -207,32 +197,35 @@ namespace Dice_Poker
             {
                 contador = 0;
                 timer1.Enabled = false;
+
+                if (nrJogadas == 1)
+                {
+                    //alterar o texto do botão
+                    btnRolar.Text = "Rolar outra vez os Dados";
+
+                    //exibir o checkbox de cada dado
+                    chkDado1.Visible = true;
+                    chkDado2.Visible = true;
+                    chkDado3.Visible = true;
+                    chkDado4.Visible = true;
+                    chkDado5.Visible = true;
+                    chkDados.Visible = true;
+
+                }
+
+                if (nrJogadas == 2)
+                {
+                    //preparar para uma nova jogada
+                    btnRolar.Text = "Rolar os Dados";
+                    LimparCheckbox();
+
+                    //verificaro resultado da jogada
+                    VerificarResultadoJogada();
+                }
+
             }
 
-            if (nrJogadas == 1)
-            {
-                //alterar o texto do botão
-                btnRolar.Text = "Rolar outra vez od Dados";
 
-                //exibir o checkbox de cada dado
-                chkDado1.Visible = true;
-                chkDado2.Visible = true;
-                chkDado3.Visible = true;
-                chkDado4.Visible = true;
-                chkDado5.Visible = true;
-                chkDados.Visible = true;
-
-            }
-
-            if (nrJogadas == 2)
-            {
-                //preparar para uma nova jogada
-                btnRolar.Text = "Rolar os Dados";
-                LimparCheckbox();
-
-                //verificaro resultado da jogada
-                VerificarResultadoJogada();
-            }
         }
 
         private void LimparCheckbox()
@@ -257,14 +250,14 @@ namespace Dice_Poker
         private void VerificarResultadoJogada()
         {
             //array para manter a contagem do número em cada mão
-            int[] dadosArray = new int[6];
+            int[] dadosArray = new int[5];
 
             //variável para controlar a execução do loop
-            int i = 1;
+            int i = 0;
 
             //iterar seis vezes para manter a contagem do total
             //de 1s, 2s, 3s, 4s, 5s e 6s que foram rolados
-            for (i = 1; i < 7; i++)
+            for (i = 1; i < 6; i++)
             {
                 if (dado1 == i) dadosArray[i] += 1;
                 if (dado2 == i) dadosArray[i] += 1;
@@ -274,7 +267,7 @@ namespace Dice_Poker
             }
 
             //iterar seis vezes para contar as mãos vencedoras
-            for (i = 1; i < 7; i++)
+            for (i = 0; i < 6; i++)
             {
                 //ver se o jogador tem 5 do mesmo tipo
                 if (dadosArray[i] == 5)
@@ -297,7 +290,7 @@ namespace Dice_Poker
                     bool fullHouse = false;
 
                     //verificar se tem 2 do mesmo tipo
-                    for (int j = 1; j < 7; j++)
+                    for (int j = 0; j < 6; j++)
                     {
                         if (dadosArray[j] == 2)
                         {
@@ -320,13 +313,13 @@ namespace Dice_Poker
 
             //iterar os dados 2 a 6 à procura de um High Straight
             //cada uma das posições só pode conter o valor 1
-            for (i = 2; i < 7; i++)
+            for (i = 1; i < 6; i++)
             {
                 if (dadosArray[i] != 1) return;
                 else
                 {
                     //quando terminar 
-                    if (i == 6)
+                    if (i == 5)
                     {
                         creditos += 3;
                         txtOutput.Text = "GANHOU! High Straight.\nGanhou 3 créditos.";
@@ -335,12 +328,12 @@ namespace Dice_Poker
                 }
             }
 
-            for (i = 1; i < 5; i++)
+            for (i = 0; i < 4; i++)
             {
                 if (dadosArray[i] != 1) return;
                 else
                 {
-                    if (i == 5)
+                    if (i == 4)
                     {
                         creditos += 3;
                         txtOutput.Text = "GANHOU! Low Straight.\nGanhou 3 créditos.";
@@ -352,6 +345,10 @@ namespace Dice_Poker
             //atualizar o preço da jogada
             creditos -= 2;
             txtOutput.Text = "SORRY! Perdeu esta mão e 2 créditos.";
+            if (creditos <= 0)
+            {
+                FimDoJogo();
+            }
         }
 
         private void AtualizarConta()
@@ -417,11 +414,10 @@ namespace Dice_Poker
             }
         }
 
-        private void btnExit_Click(object sender, EventArgs e)
+        private void btnExit_Click_1(object sender, EventArgs e)
         {
             Application.Exit();
         }
-
     }
-
 }
+
